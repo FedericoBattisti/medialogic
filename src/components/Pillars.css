@@ -1,0 +1,135 @@
+.pillars {
+  padding: 8rem 2rem;
+  position: relative;
+  background: linear-gradient(180deg, transparent 0%, rgba(124, 58, 237, 0.03) 100%);
+}
+
+.pillars::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 212, 255, 0.5), transparent);
+}
+
+.pillars-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pillar-card {
+  background: rgba(10, 10, 30, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.pillar-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.pillar-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-color);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    0 0 60px rgba(var(--accent-color), 0.1);
+}
+
+.pillar-card:hover::before {
+  opacity: 1;
+}
+
+.pillar-icon-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+}
+
+.pillar-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  color: var(--accent-color);
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.pillar-icon svg {
+  width: 36px;
+  height: 36px;
+}
+
+.icon-glow {
+  position: absolute;
+  inset: -10px;
+  background: var(--accent-color);
+  filter: blur(30px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+}
+
+.pillar-card:hover .icon-glow {
+  opacity: 0.3;
+}
+
+.pillar-card:hover .pillar-icon {
+  border-color: var(--accent-color);
+  transform: scale(1.05);
+}
+
+.pillar-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.pillar-description {
+  color: #8888a0;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.pillar-line {
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-color), transparent);
+  margin: 1.5rem auto 0;
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .pillars-container {
+    grid-template-columns: 1fr;
+  }
+}

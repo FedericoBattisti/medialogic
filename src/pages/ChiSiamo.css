@@ -1,0 +1,352 @@
+.chi-siamo-page {
+  padding-top: 80px;
+}
+
+.chi-siamo-hero {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+  overflow: hidden;
+}
+
+.chi-siamo-hero .hero-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.chi-siamo-hero .hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 1px 1px, rgba(0, 212, 255, 0.1) 1px, transparent 0);
+  background-size: 40px 40px;
+  opacity: 0.5;
+}
+
+.chi-siamo-hero .hero-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(124, 58, 237, 0.2) 0%, transparent 70%);
+  filter: blur(60px);
+}
+
+.chi-siamo-hero .page-hero-content {
+  text-align: center;
+  z-index: 1;
+}
+
+.chi-siamo-hero .page-hero-content h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.company-name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #00d4ff;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.about-content {
+  padding: 5rem 2rem;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Mission Statement */
+.mission-statement {
+  text-align: center;
+  margin-bottom: 5rem;
+  padding: 3rem;
+  background: rgba(10, 10, 30, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  position: relative;
+}
+
+.mission-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(124, 58, 237, 0.1));
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  border-radius: 16px;
+  color: #00d4ff;
+}
+
+.mission-icon svg {
+  width: 40px;
+  height: 40px;
+}
+
+.mission-statement p {
+  color: #a0a0b0;
+  font-size: 1.15rem;
+  line-height: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-statement .highlight {
+  color: #00d4ff;
+  font-weight: 600;
+}
+
+/* Pillars Section */
+.pillars-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.pillar-item {
+  background: rgba(10, 10, 30, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.pillar-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00d4ff, #7c3aed);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.pillar-item:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 212, 255, 0.3);
+}
+
+.pillar-item:hover::before {
+  opacity: 1;
+}
+
+.pillar-number {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.3), rgba(124, 58, 237, 0.3));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.pillar-item h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.pillar-item p {
+  color: #8888a0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Certifications Section */
+.certifications-section {
+  margin-top: 5rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.certifications-section h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.2rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.certifications-intro {
+  text-align: center;
+  color: #a0a0b0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.certification-card {
+  background: rgba(10, 10, 30, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.certification-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00d4ff, #7c3aed);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 212, 255, 0.3);
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.1);
+}
+
+.certification-card:hover::before {
+  transform: scaleX(1);
+}
+
+.cert-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(124, 58, 237, 0.1));
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  border-radius: 12px;
+  color: #00d4ff;
+  transition: all 0.3s ease;
+}
+
+.certification-card:hover .cert-icon {
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(124, 58, 237, 0.2));
+  transform: scale(1.1);
+}
+
+.cert-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.certification-card h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.certification-card p {
+  color: #8888a0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.cert-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(124, 58, 237, 0.15));
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  border-radius: 20px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #00d4ff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.external-link
+{
+  font-weight: 600;
+  transition: 400ms ease-in-out;
+}
+
+.external-link:hover
+{
+  background: linear-gradient(90deg, #00d4ff, #7c3aed, #00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease infinite;
+  font-weight: 600;
+  transition: 400ms ease-in-out;
+}
+
+@media (max-width: 1100px) {
+  .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .pillars-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .chi-siamo-hero .page-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .company-name {
+    font-size: 1.4rem;
+  }
+
+  .mission-statement {
+    padding: 2rem;
+  }
+
+  .mission-statement p {
+    font-size: 1rem;
+  }
+}
