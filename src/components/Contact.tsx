@@ -19,7 +19,7 @@ const Contact = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          access_key: 'YOUR_ACCESS_KEY', // Sostituisci con la tua access key da web3forms.com
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
           to_email: 'info@medialogicai.it',
           subject: 'Nuova richiesta contatto - Medialogic AI',
           phone: phone,
