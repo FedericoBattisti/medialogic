@@ -6,37 +6,37 @@ const useCasesData = [
   {
     category: 'AI & Machine Learning',
     cases: [
-      { title: 'Gestione Citazioni', description: 'Analisi automatica e classificazione di citazioni documentali' },
-      { title: 'Transaction Anomaly Detection', description: 'Rilevamento anomalie nelle transazioni finanziarie' },
-      { title: 'Valutazione Acque', description: 'Analisi predittiva della qualità delle acque' }
+      { title: 'Gestione Citazioni', slug: 'gestione-citazioni', description: 'Analisi automatica e classificazione di citazioni documentali' },
+      { title: 'Transaction Anomaly Detection', slug: 'transaction-anomaly-detection', description: 'Rilevamento anomalie nelle transazioni finanziarie' },
+      { title: 'Valutazione Acque', slug: 'valutazione-acque', description: 'Analisi predittiva della qualità delle acque' }
     ]
   },
   {
     category: 'Procurement',
     cases: [
-      { title: 'Annotazioni ANAC', description: 'Automazione controlli ANAC per appalti pubblici' },
-      { title: 'Agenzia delle Entrate', description: 'Integrazione automatica con servizi AdE' },
-      { title: 'Casellario Giudiziale', description: 'Verifica automatica casellario giudiziale' },
-      { title: 'Controllo CERVED', description: 'Automazione verifica dati CERVED' },
-      { title: 'Antimafia', description: 'Controlli antimafia automatizzati' },
-      { title: 'Controllo DURC', description: 'Verifica automatica regolarità contributiva' }
+      { title: 'Annotazioni ANAC', slug: 'annotazioni-anac', description: 'Automazione controlli ANAC per appalti pubblici' },
+      { title: 'Agenzia delle Entrate', slug: 'agenzia-delle-entrate', description: 'Integrazione automatica con servizi AdE' },
+      { title: 'Casellario Giudiziale', slug: 'casellario-giudiziale', description: 'Verifica automatica casellario giudiziale' },
+      { title: 'Controllo CERVED', slug: 'controllo-cerved', description: 'Automazione verifica dati CERVED' },
+      { title: 'Antimafia', slug: 'antimafia', description: 'Controlli antimafia automatizzati' },
+      { title: 'Controllo DURC', slug: 'controllo-durc', description: 'Verifica automatica regolarità contributiva' }
     ]
   },
   {
     category: 'HR & Operations',
     cases: [
-      { title: 'Gestione parco auto', description: 'Automazione gestione flotta aziendale' },
-      { title: 'Gestione Master Data', description: 'Sincronizzazione e pulizia dati anagrafici' },
-      { title: 'Gestione ticket di assistenza', description: 'Smistamento automatico richieste supporto' },
-      { title: 'Canalizzatore automatizzato', description: 'Routing intelligente delle comunicazioni' },
-      { title: 'Canalizzatore e-mail', description: 'Classificazione e smistamento email automatico' }
+      { title: 'Gestione parco auto', slug: 'gestione-parco-auto', description: 'Automazione gestione flotta aziendale' },
+      { title: 'Gestione Master Data', slug: 'gestione-master-data', description: 'Sincronizzazione e pulizia dati anagrafici' },
+      { title: 'Gestione ticket di assistenza', slug: 'gestione-ticket-assistenza', description: 'Smistamento automatico richieste supporto' },
+      { title: 'Canalizzatore automatizzato', slug: 'canalizzatore-automatizzato', description: 'Routing intelligente delle comunicazioni' },
+      { title: 'Canalizzatore e-mail', slug: 'canalizzatore-email', description: 'Classificazione e smistamento email automatico' }
     ]
   },
   {
     category: 'Finance & Automotive',
     cases: [
-      { title: 'Cassetto Fiscale', description: 'Automazione accesso e gestione cassetto fiscale' },
-      { title: 'Validazione Dati e Documenti', description: 'Verifica automatica documentazione automotive' }
+      { title: 'Cassetto Fiscale', slug: 'cassetto-fiscale', description: 'Automazione accesso e gestione cassetto fiscale' },
+      { title: 'Validazione Dati e Documenti', slug: 'validazione-dati-documenti', description: 'Verifica automatica documentazione automotive' }
     ]
   }
 ];
@@ -75,13 +75,13 @@ const UseCases = () => {
                 </h3>
                 <div className="cases-grid">
                   {category.cases.map((useCase, idx) => (
-                    <div key={idx} className="case-card">
+                    <Link to={`/use-cases/${useCase.slug}`} key={idx} className="case-card">
                       <h4>{useCase.title}</h4>
                       <p>{useCase.description}</p>
                       <span className="case-link">
                         Scopri di più →
                       </span>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>

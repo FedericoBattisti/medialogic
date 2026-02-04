@@ -10,6 +10,7 @@ import CosaFacciamo from './pages/CosaFacciamo';
 import Prodotti from './pages/Prodotti';
 import Partner from './pages/Partner';
 import UseCases from './pages/UseCases';
+import UseCaseDetail from './pages/UseCaseDetail';
 import './App.css';
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
           <Route path="/tecnologie/prodotti" element={<Prodotti />} />
           <Route path="/tecnologie/partner" element={<Partner />} />
           <Route path="/use-cases/le-nostre-soluzioni" element={<UseCases />} />
+          <Route path="/use-cases/:slug" element={<UseCaseDetail />} />
         </Routes>
         <Footer />
       </div>
