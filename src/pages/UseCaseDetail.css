@@ -1,4 +1,6 @@
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
 .usecase-detail-page {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
   min-height: 100vh;
   padding-top: 80px;
 }
@@ -17,7 +19,7 @@
 .category-badge {
   display: inline-block;
   padding: 8px 20px;
-  background: rgba(0, 212, 255, 0.1);
+  /* background rimosso per uniformità */
   border: 1px solid rgba(0, 212, 255, 0.3);
   border-radius: 50px;
   color: #00d4ff;
@@ -31,7 +33,7 @@
 .sector-badge {
   display: inline-block;
   padding: 6px 16px;
-  background: rgba(120, 0, 255, 0.1);
+  /* background rimosso per uniformità */
   border: 1px solid rgba(120, 0, 255, 0.3);
   border-radius: 50px;
   color: #a855f7;
@@ -74,7 +76,7 @@
 }
 
 .necessity-section {
-  background: rgba(255, 255, 255, 0.02);
+  /* background rimosso per uniformità */
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
   padding: 40px;
@@ -89,7 +91,7 @@
 .necessity-section .section-icon {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(120, 0, 255, 0.2));
+  /* background rimosso per uniformità */
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -141,7 +143,7 @@
 }
 
 .activity-card {
-  background: rgba(255, 255, 255, 0.02);
+  /* background rimosso per uniformità */
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 15px;
   padding: 20px 25px;
@@ -153,14 +155,14 @@
 
 .activity-card:hover {
   border-color: rgba(0, 212, 255, 0.3);
-  background: rgba(0, 212, 255, 0.05);
+  /* background rimosso per uniformità */
   transform: translateX(10px);
 }
 
 .activity-number {
   width: 35px;
   height: 35px;
-  background: linear-gradient(135deg, #00d4ff, #7800ff);
+  /* background rimosso per uniformità */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -181,7 +183,7 @@
 .usecase-detail-content .cta-section {
   text-align: center;
   padding: 60px 40px;
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.05), rgba(120, 0, 255, 0.05));
+  /* background rimosso per uniformità */
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 25px;
 }
@@ -214,7 +216,7 @@
 }
 
 .cta-button.primary {
-  background: linear-gradient(135deg, #00d4ff, #7800ff);
+  /* background rimosso per uniformità */
   color: #fff;
 }
 
@@ -224,7 +226,7 @@
 }
 
 .cta-button.secondary {
-  background: transparent;
+  /* background rimosso per uniformità */
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
 }

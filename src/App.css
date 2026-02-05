@@ -1,37 +1,28 @@
+ .global-particles {
+   position: fixed;
+   inset: 0;
+   pointer-events: none;
+   z-index: 0;
+   overflow: hidden;
+ }
+
+ .global-particle {
+   position: absolute;
+   width: 4px;
+   height: 4px;
+   background: #00d4ff;
+   border-radius: 50%;
+   animation: globalFloat 5s ease-in-out infinite;
+   opacity: 0.5;
+ }
+
+ @keyframes globalFloat {
+   0%, 100% { transform: translateY(100vh) scale(0); opacity: 0; }
+   10% { opacity: 0.5; }
+   90% { opacity: 0.5; }
+   100% { transform: translateY(-100px) scale(1); opacity: 0; }
+ }
 .app {
   min-height: 100vh;
   position: relative;
-}
-
-.global-particles {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.global-particle {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background: #00d4ff;
-  border-radius: 50%;
-  animation: globalFloat 5s ease-in-out infinite;
-  opacity: 0.5;
-  box-shadow: 0 0 10px #00d4ff;
-}
-
-@keyframes globalFloat {
-  0%, 100% { transform: translateY(100vh) scale(0); opacity: 0; }
-  10% { opacity: 0.5; }
-  90% { opacity: 0.5; }
-  100% { transform: translateY(-100px) scale(1); opacity: 0; }
-}
-
-.gradient-text {
-  background: linear-gradient(135deg, #00d4ff, #7c3aed, #f472b6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }

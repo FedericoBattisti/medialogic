@@ -9,14 +9,14 @@
   justify-content: center;
   position: relative;
   background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
 }
 
 .page-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle at 1px 1px, rgba(0, 212, 255, 0.1) 1px, transparent 0);
-  background-size: 40px 40px;
+  /* background-image rimosso per uniformità */
   opacity: 0.5;
 }
 
@@ -44,6 +44,7 @@
 }
 
 .usecases-content {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
   padding: 6rem 2rem;
 }
 
@@ -77,8 +78,9 @@
 }
 
 .category-section {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
   padding: 2rem;
-  background: rgba(10, 10, 30, 0.4);
+  /* background rimosso per uniformità */
   border: 1px solid rgba(255, 255, 255, 0.05);
   border-radius: 20px;
 }
@@ -102,7 +104,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(0, 212, 255, 0.2));
+  /* background rimosso per uniformità */
   border-radius: 10px;
   color: #00d4ff;
 }
@@ -119,8 +121,9 @@
 }
 
 .case-card {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
   padding: 1.5rem;
-  background: rgba(0, 0, 0, 0.3);
+  /* background rimosso per uniformità */
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   transition: all 0.3s ease;
@@ -163,7 +166,7 @@
   margin-top: 5rem;
   text-align: center;
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+  /* background rimosso per uniformità */
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -184,7 +187,7 @@
 .cta-button {
   display: inline-block;
   padding: 1rem 2.5rem;
-  background: linear-gradient(135deg, #7c3aed, #00d4ff);
+  /* background rimosso per uniformità */
   color: #fff;
   text-decoration: none;
   font-family: 'Rajdhani', sans-serif;
@@ -202,7 +205,7 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #00d4ff, #7c3aed);
+  /* background rimosso per uniformità */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -3,12 +3,13 @@
 }
 
 .page-hero {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
   min-height: 40vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
 }
 
 .page-hero::before {

@@ -9,14 +9,14 @@
   justify-content: center;
   position: relative;
   background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
 }
 
 .page-hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle at 1px 1px, rgba(0, 212, 255, 0.1) 1px, transparent 0);
-  background-size: 40px 40px;
+  /* background-image rimosso per uniformità */
   opacity: 0.5;
 }
 
@@ -44,6 +44,7 @@
 }
 
 .prodotti-content {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
   padding: 6rem 2rem;
 }
 
@@ -80,7 +81,8 @@
 }
 
 .product-card {
-  background: rgba(10, 10, 30, 0.6);
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
+  /* background rimosso per uniformità */
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   padding: 2rem;
@@ -102,7 +104,7 @@
 .product-category {
   display: inline-block;
   padding: 0.25rem 0.75rem;
-  background: rgba(124, 58, 237, 0.2);
+  /* background rimosso per uniformità */
   border-radius: 4px;
   font-family: 'Rajdhani', sans-serif;
   font-size: 0.75rem;
@@ -137,7 +139,7 @@
 
 .feature-tag {
   padding: 0.35rem 0.75rem;
-  background: rgba(0, 212, 255, 0.1);
+  /* background rimosso per uniformità */
   border: 1px solid rgba(0, 212, 255, 0.2);
   border-radius: 4px;
   font-family: 'Rajdhani', sans-serif;
@@ -147,7 +149,7 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #00d4ff, #7c3aed);
+  /* background rimosso per uniformità */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
